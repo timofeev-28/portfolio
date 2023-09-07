@@ -1,7 +1,7 @@
 # Портфолио верстальщика Дмитрия Тимофеева
 
 ---
-**В проекте используется сборка Сергея Артёмова ([Firefoxic](https://github.com/firefoxic/project-template-2)).
+**В проекте используется сборка Сергея Артёмова ([Firefoxic](https://github.com/firefoxic/project-template-2)).**
 
 В корне проекта находятся только его конфиги. А также [Contributing.md](Contributing.md) — полезное руководство по внесению изменений.
 
