@@ -7,7 +7,7 @@
 	"editor.guides.bracketPairs": true,
 	"editor.insertSpaces": false,
 	"editor.linkedEditing": true,
-	"editor.renderWhitespace": "selection",
+	"editor.renderWhitespace": "all",
 	"editor.wordWrap": "on",
 
 	"files.insertFinalNewline": true,

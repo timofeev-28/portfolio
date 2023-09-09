@@ -1,3 +1,59 @@
+.page {
+	box-sizing: border-box;
+	block-size: 100%;
+	font-family: var(--main-font);
+	font-size: var(--main-size);
+	font-weight: 400;
+	line-height: 1.2;
+	color: var(--c-main);
+	background-color: var(--c-bgc);
+	scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+.page__body {
+	margin: 0;
+	min-inline-size: 340px;
+	min-block-size: 100vh;
+	display: grid;
+	grid-template-rows: min-content 1fr min-content;
+
+	// Пример вставки адаптивного растра в фон
+	& main::before {
+		content: "Фон псевдоэлемента";
+		display: block;
+		inline-size: 100%;
+		aspect-ratio: 1;
+		background: oklch(96% 0 0) var(--bg-image) no-repeat center / contain;
+	}
+
+	@include bg-image(example); // добавляет кастомку в разные @media, поэтому не нужно его вставлять в псевдики, лучше просто в блок/элемент
+	// Конец примера
+}
+
+.page__container {
+	margin-inline: 15px;
+
+	@media #{$not-mobile} {
+		margin-inline: 30px;
+	}
+
+	@media #{$desktop-only} {
+		inline-size: 1220px;
+		margin-inline: auto;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
 img {
 	height: auto;
 	max-width: 100%;
@@ -11,4 +67,30 @@ img[src*=".svg" i] {
 picture,
 source {
 	display: contents;	// это просто должно было быть в браузерах
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.btn-reset {
+	// border: none;
+	// padding: 0;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.list-reset {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
 }
