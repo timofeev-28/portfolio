@@ -4,39 +4,16 @@
 	"pages": [
 		{
 			"path": "./",
-			"name": "Главная"
+			"name": "Обо мне"
 		},
 		{
-			"path": "./Вторая.html",
-			"name": "Название пока не придумано"
+			"path": "./works-js.html",
+			"name": "Разное на JS"
 		}
 	],
 	"viewports": {
 		"desktop": 1280,
 		"tablet": 768,
 		"mobile": null
-	},
-	"images": {
-		"example": {
-			"ext": "png",
-			"maxdppx": 2,
-			"sizes": [
-				{
-					"viewport": "desktop",
-					"width": 1280,
-					"height": 1280
-				},
-				{
-					"viewport": "tablet",
-					"width": 640,
-					"height": 640
-				},
-				{
-					"viewport": "mobile",
-					"width": 320,
-					"height": 320
-				}
-			]
-		}
 	}
 }

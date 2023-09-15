@@ -1,12 +1,23 @@
-<header>
-	<nav class="main-nav main-nav--nojs main-nav--opened">
-		<ul class="main-nav__list">
-			{# Генерация пунктов списка навигации циклом по массиву pages из data.json #}
-			{% for page in pages %}
-			<li class="main-nav__item">
-				<a href="{{ page.path }}" class="main-nav__link link" {% if permalink == page.path %} aria-current="page"{% endif %}>{{ page.name }}</a>
-			</li>
-			{% endfor %}
-		</ul>
-	</nav>
+<header class="header">
+	<div class="page__container header__container">
+		<a class="header__logo-link logo" href="./" {% if permalink == "./" %}aria-current="page"{% endif %}>
+			<picture>
+				{# <source media="(min-width: 1440px)" srcset="./img/logo.svg#desktop">
+				<source media="(min-width: 768px)" srcset="./img/logo.svg#tablet"> #}
+				<img class="logo__img" src="img/logo.png" width="365" height="36" alt="Логотип - надпись портфолио">
+			</picture>
+		</a>
+		<nav class="nav">
+			<ul class="nav__list list-reset">
+				{% for page in pages %}
+				<li class="nav__item {% if permalink == page.path %} nav__item--current {% endif %}">
+					<a class="nav__link" href="{{ page.path }}" {% if permalink == page.path %} aria-current="page"{% endif %}>{{ page.name }}</a>
+				</li>
+				{% endfor %}
+			</ul>
+			<a class="nav__link" href="javascript:undefined">Мои работы</a>
+			<a class="nav__link nav__link--gh" href="https://github.com/timofeev-28" target="_blank" aria-label="Мой профиль на Гитхабе"></a>
+		</nav>
+		<button class="burger btn-reset" type="button" aria-label="Открыть меню сайта"></button>
+	</div>
 </header>

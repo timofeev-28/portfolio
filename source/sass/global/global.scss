@@ -22,18 +22,6 @@
 	min-block-size: 100vh;
 	display: grid;
 	grid-template-rows: min-content 1fr min-content;
-
-	// Пример вставки адаптивного растра в фон
-	& main::before {
-		content: "Фон псевдоэлемента";
-		display: block;
-		inline-size: 100%;
-		aspect-ratio: 1;
-		background: oklch(96% 0 0) var(--bg-image) no-repeat center / contain;
-	}
-
-	@include bg-image(example); // добавляет кастомку в разные @media, поэтому не нужно его вставлять в псевдики, лучше просто в блок/элемент
-	// Конец примера
 }
 
 .page__container {
@@ -83,7 +71,7 @@ source {
 }
 
 .btn-reset {
-	// border: none;
+	border: none;
 	// padding: 0;
 	background-color: transparent;
 	cursor: pointer;
@@ -91,6 +79,6 @@ source {
 
 .list-reset {
 	list-style: none;
-	margin: 0;
+	margin-block: 0;
 	padding-left: 0;
 }
