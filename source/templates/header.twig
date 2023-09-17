@@ -7,17 +7,19 @@
 				<img class="logo__img" src="img/logo.png" width="365" height="36" alt="Логотип - надпись портфолио">
 			</picture>
 		</a>
-		<nav class="nav">
-			<ul class="nav__list list-reset">
+		<nav class="navigation">
+			<ul class="navigation__list list-reset">
 				{% for page in pages %}
-				<li class="nav__item {% if permalink == page.path %} nav__item--current {% endif %}">
-					<a class="nav__link" href="{{ page.path }}" {% if permalink == page.path %} aria-current="page"{% endif %}>{{ page.name }}</a>
+				<li class="navigation__item {% if permalink == page.path %} navigation__item--current {% endif %}">
+					<a class="navigation__link" href="{{ page.path }}" {% if permalink == page.path %} aria-current="page"{% endif %}>{{ page.name }}</a>
 				</li>
 				{% endfor %}
 			</ul>
-			<a class="nav__link" href="javascript:undefined">Мои работы</a>
-			<a class="nav__link nav__link--gh" href="https://github.com/timofeev-28" target="_blank" aria-label="Мой профиль на Гитхабе"></a>
+			<a class="navigation__link" href="javascript:undefined">Мои работы</a>
+			<a class="navigation__link navigation__link--gh" href="https://github.com/timofeev-28" target="_blank" aria-label="Мой профиль на Гитхабе"></a>
 		</nav>
-		<button class="burger btn-reset" type="button" aria-label="Открыть меню сайта"></button>
+		<button class="burger btn-reset" type="button" aria-label="Открыть меню сайта">
+			<span class="burger__line"></span>
+		</button>
 	</div>
 </header>
