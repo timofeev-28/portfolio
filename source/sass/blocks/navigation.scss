@@ -8,7 +8,7 @@
 	row-gap: 30px;
 	padding-block: 20px;
 	padding-inline: 30px;
-	width: 80%;
+	width: 70%;
 	min-height: 50vh;
 	background: linear-gradient(to right, #0d5536, #0e7046);
 	background-color: #0d5837;
@@ -23,27 +23,56 @@
 		transform: none;
 		transition: visibility 0.4s ease-in-out, transform 0.4s ease-in-out;
 	}
-}
 
-.navigation__list {
-	display: flex;
-	flex-direction: column;
-	row-gap: 30px;
-}
+	@media #{$tablet-only} {
+		width: 35%;
+	}
 
-.navigation__item {
-	position: relative;
+	@media #{$not-tablet} {
+		position: relative;
+		flex-direction: initial;
+		align-items: center;
+		column-gap: 35px;
+		row-gap: 10px;
+		padding-block: 0;
+		padding-inline: 0;
+		width: auto;
+		min-height: auto;
+		background: transparent;
+		background-color: transparent;
+		border-bottom-left-radius: initial;
+		visibility: visible;
+		overflow-y: initial;
+		transform: none;
+	}
 
-	&--current::before {
-		position: absolute;
-		content: "";
-		top: 50%;
-		left: -9px;
-		transform: translateY(-50%);
-		width: 6px;
-		height: 6px;
-		border-radius: 50%;
-		background-color: #be5b0a;
+	&__list {
+		display: flex;
+		flex-direction: column;
+		row-gap: 30px;
+
+		@media #{$not-tablet} {
+			flex-direction: initial;
+			align-items: center;
+			column-gap: 35px;
+			row-gap: 10px;
+		}
+	}
+
+	&__item {
+		position: relative;
+
+		&--current::before {
+			position: absolute;
+			content: "";
+			top: 50%;
+			left: -9px;
+			transform: translateY(-50%);
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			background-color: #be5b0a;
+		}
 	}
 }
 
@@ -54,6 +83,13 @@
 	font-size: 1.1em;
 	transition: color 0.2s ease-in-out, outline 0.3s ease-in-out;
 
+	@media #{$not-tablet} {
+		display: block;
+		width: auto;
+		font-size: 0.8em;
+	}
+
+	// полоска под ссылкой при ховере
 	&::after {
 		content: "";
 		position: absolute;
@@ -91,30 +127,42 @@
 			background-color: var(--c-active);
 		}
 	}
+}
 
-	&--gh {
+.navigation__link--gh {
+	width: 76px;
+	height: 33px;
+	transform: translateY(2px);
+
+	@media #{$not-tablet} {
+		width: 68px;
+		height: 25px;
+		transform: translateY(-1px);
+	}
+
+	&::before {
+		content: "";
+		display: block;
 		width: 76px;
 		height: 33px;
-		transform: translateY(2px);
+		background-color: var(--c-main);
+		mask: url("../../icons/stack.svg#github") no-repeat center / 76px 33px;
+		transition: background-color 0.2s ease-in-out;
 
+		@media #{$not-tablet} {
+			width: 68px;
+			height: 25px;
+			mask-size: 68px 25px;
+		}
+	}
+
+	@include hover {
 		&::before {
-			content: "";
-			display: block;
-			width: 76px;
-			height: 33px;
-			background-color: var(--c-main);
-			mask: url("../../icons/stack.svg#github") no-repeat center / 76px 33px;
-			transition: background-color 0.2s ease-in-out;
+			background-color: var(--c-accent);
 		}
+	}
 
-		@include hover {
-			&::before {
-				background-color: var(--c-accent);
-			}
-		}
-
-		&:active::before {
-			background-color: var(--c-active);
-		}
+	&:active::before {
+		background-color: var(--c-active);
 	}
 }

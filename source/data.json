@@ -13,6 +13,7 @@
 	],
 	"viewports": {
 		"desktop": 1280,
+		"big-tablet": 1024,
 		"tablet": 768,
 		"mobile": null
 	}
