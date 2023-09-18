@@ -8,19 +8,34 @@
 	<section class="hero">
 		<div class="hero__container page__container">
 			<h2 class="visually-hidden">Немного обо мне</h2>
+
+			<h3 class="hero__title">
+				<span class="hero__subtitle">Привет, меня зовут Дмитрий</span>
+				Я верстальщик, будущий фронтенд-разработчик
+			</h3>
+
 			<div class="hero__image-wrapper">
-				<img class="hero__image" src="img/dn.JPG" width="365" height="36" alt="Моё фото">
+				{% include "./templates/picture.twig" with {name: "dn", class: "hero__image", alt: "Моё фото."} %}
 			</div>
-			<div class="hero__greeting">
-				<h3 class="hero__title">
-					<span class="hero__subtitle">Привет, меня зовут Дмитрий</span>
-					Я верстальщик, будущий фронтенд-разработчик
-				</h3>
-			</div>
+
+			<p class="hero__text">Очень нравится вёрстка, люблю Java Script!</p>
+
+			<p class="hero__descr">С радостью вольюсь в команду веб-разработчиков!</p>
+
+			<ul class="hero__list-social social list-reset">
+				<li class="social__item">
+					<a class="social__link social__link--phone" href="tel:+79043356128">+7(904)335-61-28</a>
+				</li>
+				<li class="social__item">
+					<a class="social__link social__link--telegram" href="https://t.me/timofeev28">Telegram</a>
+				</li>
+				<li class="social__item">
+					<a class="social__link social__link--mail" href="mailto:timofeevdn28@mail.ru">timofeevdn28@mail.ru</a>
+				</li>
+			</ul>
 		</div>
 	</section>
 
 	{# <section class="about">
 	</section> #}
-
 {% endblock %}

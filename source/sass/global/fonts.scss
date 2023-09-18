@@ -18,7 +18,38 @@
 		url("../../fonts/opensansbold.woff") format("woff");
 }
 
+@font-face {
+	font-family: "Noto-sans";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src:
+		url("../../fonts/notosans-regular.woff2") format("woff2"),
+		url("../../fonts/notosans-regular.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Noto-sans";
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src:
+		url("../../fonts/notosans-medium.woff2") format("woff2"),
+		url("../../fonts/notosans-medium.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Noto-sans";
+	font-style: italic;
+	font-weight: 300;
+	font-display: swap;
+	src:
+		url("../../fonts/notosans-lightitalic.woff2") format("woff2"),
+		url("../../fonts/notosans-lightitalic.woff") format("woff");
+}
+
 :root {
-	--main-font: "Open-sans", system-ui, sans-serif;
-	--accent-font: "Open-sans", system-ui, sans-serif;
+	--main-font: "Noto-sans", system-ui, sans-serif;
+	--accent-font: "Noto-sans", system-ui, sans-serif;
+	--italic-font: "Noto-sans", system-ui, sans-serif;
 }

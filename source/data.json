@@ -16,5 +16,28 @@
 		"big-tablet": 1024,
 		"tablet": 768,
 		"mobile": null
+	},
+	"images": {
+		"dn": {
+			"ext": "JPG",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 160,
+					"height": 160
+				},
+				{
+					"viewport": "tablet",
+					"width": 160,
+					"height": 160
+				},
+				{
+					"viewport": "mobile",
+					"width": 140,
+					"height": 140
+				}
+			]
+		}
 	}
 }

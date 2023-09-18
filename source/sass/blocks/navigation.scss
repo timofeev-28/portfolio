@@ -80,13 +80,12 @@
 	position: relative;
 	display: inline-block;
 	width: fit-content;
-	font-size: 1.1em;
 	transition: color 0.2s ease-in-out, outline 0.3s ease-in-out;
 
 	@media #{$not-tablet} {
 		display: block;
 		width: auto;
-		font-size: 0.8em;
+		font-size: 20px;
 	}
 
 	// полоска под ссылкой при ховере
@@ -137,7 +136,7 @@
 	@media #{$not-tablet} {
 		width: 68px;
 		height: 25px;
-		transform: translateY(-1px);
+		transform: translateY(-2px);
 	}
 
 	&::before {
