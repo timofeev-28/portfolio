@@ -3,12 +3,27 @@
 	flex-direction: column;
 	row-gap: 5px;
 
+	@media #{$not-tablet} {
+		flex-direction: initial;
+		column-gap: 14px;
+	}
+
 	&__link {
 		position: relative;
 		display: block;
 		padding-block: 5px;
 		padding-left: 36px;
+		width: fit-content;
 		font-size: 20px;
+		transition: outline 0.3s ease-in-out, color 0.3s ease-in-out;
+
+		@media (min-width: 540px) {
+			font-size: 19px;
+		}
+
+		@media #{$not-tablet} {
+			font-size: 16px;
+		}
 
 		&::before {
 			content: "";
@@ -19,13 +34,13 @@
 			width: 32px;
 			background-color: var(--c-main);
 			mask: var(--bgi) no-repeat var(--bgp)/ var(--bgs);
+			transition: background-color 0.3s ease-in-out;
 		}
 
 		&--phone {
 			--bgi: url("../../icons/stack.svg#phone");
-			--bgs: 17px 17px;
+			--bgs: 20px 20px;
 			--bgp: center 30%;
-
 			font-size: 19px;
 		}
 
@@ -33,12 +48,42 @@
 			--bgi: url("../../icons/stack.svg#telegram");
 			--bgs: 29px 22px;
 			--bgp: center 40%;
+			text-transform: lowercase;
 		}
 
 		&--mail {
 			--bgi: url("../../icons/stack.svg#mail");
-			--bgs: 10px 10px;
-			--bgp: center 55%;
+			--bgs: 18px 14px;
+			--bgp: center 50%;
+		}
+
+		&:focus {
+			outline: none;
+		}
+
+		&:focus-visible {
+			outline: 1px solid var(--c-accent);
+			outline-offset: 3px;
+			border-radius: 1px;
+		}
+
+		// сборка позволяет только две вложенности, поэтому без миксина
+		@media (any-hover: hover) {
+			&:hover {
+				color: var(--c-accent);
+			}
+
+			&:hover::before {
+				background-color: var(--c-mark);
+			}
+		}
+
+		&:active {
+			color: var(--c-active);
+		}
+
+		&:active::before {
+			background-color: var(--c-mark);
 		}
 	}
 }

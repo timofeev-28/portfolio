@@ -83,6 +83,12 @@
 	width: fit-content;
 	transition: color 0.2s ease-in-out, outline 0.3s ease-in-out;
 
+	// потом убрать
+	&--dis {
+		color: #808080;
+		cursor: not-allowed;
+	}
+
 	@media #{$not-tablet} {
 		display: block;
 		width: auto;

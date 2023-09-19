@@ -41,12 +41,13 @@
 		transition: transform 0.3s ease-in-out;
 	}
 
-	&:hover {
+	@include hover {
 		color: var(--c-accent);
 	}
 
 	&--active {
 		z-index: 1;
+		color: var(--c-active);
 
 		&::before {
 			top: 50%;
