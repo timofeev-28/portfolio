@@ -8,6 +8,10 @@
 		column-gap: 14px;
 	}
 
+	@media #{$desktop-only} {
+		column-gap: 40px;
+	}
+
 	&__link {
 		position: relative;
 		display: block;
@@ -23,6 +27,11 @@
 
 		@media #{$not-tablet} {
 			font-size: 16px;
+			color: var(--c-social);
+		}
+
+		@media #{$desktop-only} {
+			font-size: 18px;
 		}
 
 		&::before {
@@ -32,7 +41,7 @@
 			bottom: 0;
 			left: 0;
 			width: 32px;
-			background-color: var(--c-main);
+			background-color: var(--c-social);
 			mask: var(--bgi) no-repeat var(--bgp)/ var(--bgs);
 			transition: background-color 0.3s ease-in-out;
 		}

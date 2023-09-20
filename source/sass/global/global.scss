@@ -62,6 +62,10 @@ source {
 	display: contents;	// это просто должно было быть в браузерах
 }
 
+* {
+	-webkit-tap-highlight-color: transparent;
+}
+
 .visually-hidden {
 	position: absolute;
 	width: 1px;

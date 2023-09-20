@@ -1,6 +1,23 @@
-<footer>
-
-	Всё, что вы здесь видите, сделано осознанно и с пониманием того, что я делаю :)
-	&copy; Дизайн мой, 2023
-
+<footer class="footer page__container">
+	<a class="up footer__up" href="#header" aria-label="Наверх к началу страницы"></a>
+	<a class="footer__logo-link logo" href="./" {% if permalink == "./" %}aria-current="page"{% endif %}>
+		<img class="logo__img" src="img/logo.png" width="365" height="36" alt="Логотип - надпись портфолио">
+	</a>
+	<ul class="footer__list-social social list-reset">
+		<li class="social__item">
+			<a class="social__link social__link--phone" href="tel:+79043356128">+7(904)335-61-28</a>
+		</li>
+		<li class="social__item">
+			<a class="social__link social__link--telegram" href="https://t.me/timofeev28">Telegram</a>
+		</li>
+		<li class="social__item">
+			<a class="social__link social__link--mail" href="mailto:timofeevdn28@mail.ru">timofeevdn28@mail.ru</a>
+		</li>
+	</ul>
+	<p class="footer__text">
+		Всё, что вы здесь видите, сделано осознанно и с пониманием того, что я делаю...
+	</p>
+	<p class="footer__copyright">
+		&#9786; Дизайн мой, 2023
+	</p>
 </footer>

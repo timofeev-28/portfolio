@@ -36,6 +36,12 @@
 			font-size: 46px;
 			max-width: 550px;
 		}
+
+		@media #{$desktop-only} {
+			margin-bottom: 75px;
+			max-width: 750px;
+			font-size: 60px;
+		}
 	}
 
 	&__subtitle {
@@ -47,6 +53,11 @@
 
 		@media #{$tablet-only} {
 			font-size: 28px;
+		}
+
+		@media #{$desktop-only} {
+			margin-bottom: 13px;
+			font-size: 30px;
 		}
 	}
 
@@ -134,6 +145,10 @@
 			align-self: end;
 			max-width: 515px;
 			font-size: 33px;
+		}
+
+		@media #{$desktop-only} {
+			max-width: max-content;
 		}
 	}
 
