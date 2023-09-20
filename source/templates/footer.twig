@@ -1,8 +1,21 @@
-<footer class="footer page__container">
+<footer class="footer footer__container page__container">
 	<a class="up footer__up" href="#header" aria-label="Наверх к началу страницы"></a>
 	<a class="footer__logo-link logo" href="./" {% if permalink == "./" %}aria-current="page"{% endif %}>
 		<img class="logo__img" src="img/logo.png" width="365" height="36" alt="Логотип - надпись портфолио">
 	</a>
+
+	<nav class="footer__navigation navigation">
+		<ul class="navigation__list list-reset">
+			{% for page in pages %}
+			<li class="navigation__item {% if permalink == page.path %} navigation__item--current {% endif %}">
+				<a class="navigation__link" href="{{ page.path }}" {% if permalink == page.path %} aria-current="page"{% endif %}>{{ page.name }}</a>
+			</li>
+			{% endfor %}
+		</ul>
+		<a class="navigation__link navigation__link--dis" href="javascript:undefined">Мои работы</a>
+		<a class="navigation__link navigation__link--gh" href="https://github.com/timofeev-28" target="_blank" aria-label="Мой профиль на Гитхабе"></a>
+	</nav>
+
 	<ul class="footer__list-social social list-reset">
 		<li class="social__item">
 			<a class="social__link social__link--phone" href="tel:+79043356128">+7(904)335-61-28</a>
