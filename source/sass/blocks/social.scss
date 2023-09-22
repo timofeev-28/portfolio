@@ -19,7 +19,8 @@
 		padding-left: 36px;
 		width: fit-content;
 		font-size: 20px;
-		transition: outline 0.3s ease-in-out, color 0.3s ease-in-out;
+		color: var(--c-second-text);
+		transition: outline 0.2s ease-in-out, color 0.3s ease-in-out;
 
 		@media (min-width: 540px) {
 			font-size: 19px;
@@ -75,8 +76,7 @@
 			border-radius: 1px;
 		}
 
-		// сборка позволяет только две вложенности, поэтому без миксина
-		@media (any-hover: hover) {
+		@include hover {
 			&:hover {
 				color: var(--c-accent);
 			}

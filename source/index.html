@@ -8,20 +8,15 @@
 	<section class="hero">
 		<div class="hero__container page__container">
 			<h2 class="visually-hidden">Немного обо мне</h2>
-
-			<h3 class="hero__title">
+			<h3 class="hero__title title">
 				<span class="hero__subtitle">Привет, меня зовут Дмитрий</span>
 				Я верстальщик, будущий фронтенд-разработчик
 			</h3>
-
 			<div class="hero__image-wrapper">
 				{% include "./templates/picture.twig" with {name: "dn", class: "hero__image", alt: "Моё фото."} %}
 			</div>
-
 			<p class="hero__text">Очень нравится вёрстка, люблю Java Script!</p>
-
 			<p class="hero__descr">С радостью вольюсь в команду веб-разработчиков!</p>
-
 			<ul class="hero__list-social social list-reset">
 				<li class="social__item">
 					<a class="social__link social__link--phone" href="tel:+79043356128">+7(904)335-61-28</a>
@@ -38,7 +33,29 @@
 
 	<section class="about">
 		<div class="page__container">
-			<h2 class="about__title">Обо мне</h2>
+			<h2 class="about__title title">Обо мне</h2>
+			<ul class="accordion list-reset">
+				<li class="accordion__item ac">
+					<button class="accordion__btn ac-trigger btn-reset" type="button">Навыки</button>
+					<div class="accordion__descr ac-panel">
+						<p class="accordion__text ac-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus amet fugiat sequi facilis rerum molestiae? Quod optio ea soluta hic nihil, veniam, at dignissimos dolores dolore voluptate neque, quisquam fuga?
+						Ad quaerat molestias corrupti voluptatem molestiae esse dolor repellendus est sunt expedita porro quo similique nisi perspiciatis eaque, officiis harum. Molestias reiciendis corrupti debitis expedita cupiditate sapiente corporis culpa ipsa?
+</p>
+					</div>
+				</li>
+				<li class="accordion__item ac">
+					<button class="accordion__btn ac-trigger btn-reset" type="button">Образование</button>
+					<div class="accordion__descr ac-panel">
+						<p class="accordion__text ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+				</li>
+				<li class="accordion__item ac">
+					<button class="accordion__btn ac-trigger btn-reset" type="button">Личные качества</button>
+					<div class="accordion__descr ac-panel">
+						<p class="accordion__text ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+				</li>
+			</ul>
 		</div>
 	</section>
 

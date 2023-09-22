@@ -1,5 +1,8 @@
 .about {
 	padding-block: 25px;
 	border-bottom: 1px solid var(--c-border);
-	height: 300px;
+
+	&__title {
+		margin-bottom: 15px;
+	}
 }

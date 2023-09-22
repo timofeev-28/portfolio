@@ -20,11 +20,6 @@
 
 	&__title {
 		grid-column: 1 / -1;
-		margin-top: 0;
-		margin-bottom: 10px;
-		font-family: var(--accent-font);
-		font-size: 30px;
-		font-weight: 500;
 
 		@media (min-width: 540px) {
 			grid-column: 3 / -1;
@@ -33,14 +28,12 @@
 		}
 
 		@media #{$tablet-only} {
-			font-size: 46px;
 			max-width: 550px;
 		}
 
 		@media #{$desktop-only} {
 			margin-bottom: 75px;
 			max-width: 750px;
-			font-size: 60px;
 		}
 	}
 

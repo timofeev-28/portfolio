@@ -95,3 +95,20 @@ source {
 .stop-scroll {
 	overflow: hidden;
 }
+
+.title {
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-family: var(--accent-font);
+	font-size: 30px;
+	font-weight: 500;
+	color: var(--c-main);
+
+	@media #{$tablet-only} {
+		font-size: 46px;
+	}
+
+	@media #{$desktop-only} {
+		font-size: 60px;
+	}
+}

@@ -1,0 +1,91 @@
+.accordion {
+	&__item:not(:last-child) {
+		margin-bottom: 10px;
+	}
+
+	&__btn {
+		position: relative;
+		display: block;
+		padding-block: 20px;
+		padding-left: 0;
+		border-top: 1px solid var(--c-bgc-text);
+		border-bottom: 1px solid var(--c-bgc-text);
+		width: 100%;
+		font-size: 21px;
+		text-align: left;
+		color: var(--c-second-text);
+		transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, outline 0.2s ease-in-out;
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			right: 0;
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			background-color: var(--c-second-text);
+			mask: url("../../icons/stack.svg#arrow") no-repeat center / 50px 50px;
+			transform: translateY(-50%) rotate(-180deg);
+			transition: transform 0.5s ease-in-out, background-color 0.3s ease-in-out;
+		}
+
+		&:focus {
+			outline: none;
+		}
+
+		&:focus-visible {
+			border-radius: 1px;
+			outline: 1px solid var(--c-accent);
+			outline-offset: 2px;
+		}
+
+		@include hover {
+			&:hover {
+				color: var(--c-accent);
+				border-color: var(--c-accent);
+			}
+
+			&:hover::after {
+				background-color: var(--c-accent);
+			}
+		}
+
+		&:active {
+			color: var(--c-active);
+			border-color: var(--c-active);
+		}
+	}
+
+	&__descr {
+		overflow: hidden;
+		transition-property: height, visibility;
+		transition-timing-function: ease;
+	}
+
+	&__text {
+		margin-top: 30px;
+		margin-bottom: 20px;
+		font-size: 19px;
+		color: var(--c-second-text);
+	}
+}
+
+.ac.js-enabled .ac-panel {
+	visibility: hidden;
+}
+
+.ac.is-active .ac-panel {
+	visibility: visible;
+}
+
+// для сохранения выделенного цвета при открытии пункта аккордеона
+.ac.is-active .ac-trigger {
+	color: var(--c-active);
+	border-color: var(--c-active);
+}
+
+.ac.is-active .ac-trigger::after {
+	background-color: var(--c-active);
+	transform: translateY(-50%) rotate(0);
+}
