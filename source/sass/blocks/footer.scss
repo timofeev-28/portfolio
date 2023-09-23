@@ -2,6 +2,18 @@
 	position: relative;
 	padding-block: 20px;
 
+	@media (min-width: 540px) {
+		padding-block: 25px;
+	}
+
+	@media #{$not-mobile} {
+		padding-block: 30px;
+	}
+
+	@media #{$not-tablet} {
+		padding-block: 35px;
+	}
+
 	&__container {
 		@media #{$not-mobile} {
 			display: grid;
@@ -11,7 +23,7 @@
 		}
 
 		@media #{$not-tablet} {
-			row-gap: 23px;
+			row-gap: 25px;
 		}
 	}
 
@@ -19,6 +31,7 @@
 		position: absolute;
 		top: 20px;
 		right: 20px;
+		z-index: 2;
 	}
 
 	&__logo-link {
@@ -53,7 +66,7 @@
 	}
 
 	&__list-social {
-		margin-bottom: 13px;
+		margin-bottom: 15px;
 
 		@media #{$not-mobile} {
 			grid-column: 3 / -1;
@@ -68,7 +81,7 @@
 
 	&__text {
 		margin-top: 0;
-		margin-bottom: 13px;
+		margin-bottom: 15px;
 		font-size: 20px;
 		font-family: var(--italic-font);
 		font-weight: 300;

@@ -2,7 +2,45 @@
 	padding-block: 25px;
 	border-bottom: 1px solid var(--c-border);
 
+	&__container {
+		position: relative;
+	}
+
+	@media #{$tablet-only} {
+		padding-block: 35px;
+	}
+
+	@media #{$not-tablet} {
+		padding-block: 40px;
+	}
+
 	&__title {
 		margin-bottom: 15px;
+	}
+
+	&__image-wrap {
+		position: absolute;
+		top: 17px;
+		right: 28px;
+		padding: 7px;
+		display: none;
+		border-radius: 7px;
+		box-shadow: 0 0 2px 2px var(--c-bgc-text);
+
+		@media #{$not-tablet} {
+			display: block;
+			top: 17px;
+			right: 0;
+		}
+
+		@media #{$desktop-only} {
+			top: 17px;
+			right: 28px;
+		}
+	}
+
+	&__image {
+		display: block;
+		border-radius: 7px;
 	}
 }

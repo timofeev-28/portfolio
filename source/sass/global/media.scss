@@ -11,3 +11,5 @@ $desktop-only: "(min-width: #{$breakpoint-desktop})";
 $not-mobile: "(min-width: #{$breakpoint-tablet})";
 $not-desktop: "(max-width: #{$breakpoint-desktop - $breakpoint-gap})";
 $not-tablet: "(min-width: #{$breakpoint-big-tablet - $breakpoint-gap})";
+
+// Не, мне миксины с медиазапросами были бы удобнее

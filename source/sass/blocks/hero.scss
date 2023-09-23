@@ -6,6 +6,14 @@
 		padding-block: 30px;
 	}
 
+	@media #{$tablet-only} {
+		padding-block: 35px;
+	}
+
+	@media #{$not-tablet} {
+		padding-block: 40px;
+	}
+
 	&__container {
 		display: grid;
 		grid-template-columns: repeat(6, 1fr);
@@ -96,7 +104,7 @@
 		font-family: var(--italic-font);
 		font-weight: 300;
 		font-style: italic;
-		font-size: 21px;
+		font-size: 19px;
 		border-radius: 7px;
 		color: var(--c-second-text);
 		background-color: var(--c-bgc-text);
@@ -105,6 +113,7 @@
 		@media (min-width: 540px) {
 			grid-column: 1 / 3;
 			grid-row: 2 / 3;
+			padding-top: 6px;
 			max-width: 154px;
 			min-height: 116px;
 			font-size: 20px;

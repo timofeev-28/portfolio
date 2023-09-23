@@ -1,4 +1,12 @@
 .accordion {
+	@media #{$tablet-only} {
+		width: 75%;
+	}
+
+	@media #{$desktop-only} {
+		width: 70%;
+	}
+
 	&__item:not(:last-child) {
 		margin-bottom: 10px;
 	}
@@ -15,6 +23,10 @@
 		text-align: left;
 		color: var(--c-second-text);
 		transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, outline 0.2s ease-in-out;
+
+		@media #{$not-mobile} {
+			font-size: 25px;
+		}
 
 		&::after {
 			content: "";
@@ -63,11 +75,35 @@
 		transition-timing-function: ease;
 	}
 
-	&__text {
+	&__list-text {
 		margin-top: 30px;
-		margin-bottom: 20px;
+		margin-bottom: 10px;
+	}
+
+	&__item-text {
+		position: relative;
+		padding-left: 12px;
 		font-size: 19px;
 		color: var(--c-second-text);
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 9px;
+			left: 0;
+			border-radius: 50%;
+			width: 5px;
+			height: 5px;
+			background-color: var(--c-social);
+		}
+	}
+
+	&__item-text:not(:last-child) {
+		margin-bottom: 16px;
+	}
+
+	&__span {
+		font-size: 10px;
 	}
 }
 
