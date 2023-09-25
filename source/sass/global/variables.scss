@@ -1,4 +1,9 @@
 :root {
+	// fonts
+	--main-font: "Noto-sans", system-ui, sans-serif;
+	--accent-font: "Noto-sans", system-ui, sans-serif;
+	--italic-font: "Noto-sans", system-ui, sans-serif;
+
 	// colors
 	--c-main: #fcf3f3;
 	--c-second-text: #ece8db;
@@ -9,8 +14,9 @@
 	--c-bgc-text: #10643e;
 	--c-mark: #be5b0a;
 	--c-social: #62bdfd;
-	// --c-black: #000000;
-	// --c-white: #ffffff;
+	--c-selected: #ffd900;
+	--c-bgc-cells: #209c73;
+	--c-cells-outline: #35e2a9;
 
 	// sizes
 	--main-size: 25px;

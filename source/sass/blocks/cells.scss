@@ -1,0 +1,113 @@
+.cells {
+	padding-top: 10px;
+	padding-bottom: 20px;
+
+	&__title {
+		margin-top: 0;
+		margin-bottom: 12px;
+		font-size: 28px;
+		text-align: center;
+	}
+
+	&__descr {
+		margin-top: 0;
+		margin-bottom: 15px;
+		font-size: 17px;
+	}
+
+	&__wrap {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 20px;
+	}
+
+	&__table {
+		grid-column: 1 / -1;
+		margin-bottom: 10px;
+		padding: 2px;
+		border-radius: 3px;
+		border-spacing: 6px;
+		box-shadow: 0 0 2px 2px var(--c-bgc-text);
+	}
+
+	&__cell {
+		position: relative;
+		width: calc(10% - 2 * 3px - 9 * 6px);
+		border-radius: 2px;
+		transition: outline 0.25s ease-in-out;
+
+		&::before {
+			content: "";
+			display: block;
+			padding-top: 100%;
+			outline: 2px solid var(--c-cells-outline);
+			border-radius: 2px;
+			background-color: var(--c-bgc-cells);
+			transition: box-shadow 0.25s ease-in-out, background-color 0.25s ease-in-out;
+		}
+
+		&:focus {
+			outline: none;
+		}
+
+		&:focus-visible {
+			outline: 1px solid var(--c-accent);
+			outline-offset: 2px;
+			border-radius: 1px;
+		}
+
+		@include hover {
+			&:hover::before {
+				box-shadow: 0 0 5px 3px var(--c-social);
+			}
+		}
+
+		&:active::before {
+			box-shadow: 0 0 7px 4px var(--c-social);
+			background-color: var(--c-social);
+		}
+	}
+
+	&__selected.cells__cell::before {
+		background-color: transparent;
+	}
+
+	&__hidden-cell {
+		background-color: var(--c-selected);
+	}
+
+	&__answer {
+		margin-top: 0;
+		margin-bottom: 10px;
+		font-size: 22px;
+
+		&--attempt {
+			justify-self: end;
+		}
+
+		&--cells {
+			justify-self: start;
+		}
+	}
+
+	&__massage {
+		grid-column: 1 / -1;
+		justify-self: center;
+		margin: 0;
+		padding: 3px;
+		min-width: 230px;
+		min-height: 39px;
+		text-align: center;
+		color: var(--c-selected);
+		background: linear-gradient(91.44deg, #b8f809 8.52%, #42ff66 51.5%, #62bdfd 91.88%);
+		/* stylelint-disable-next-line property-no-vendor-prefix */
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		box-shadow: 0 0 2px 2px var(--c-bgc-text);
+	}
+
+	&__count {
+		padding-inline: 6px;
+		color: var(--c-selected);
+	}
+}

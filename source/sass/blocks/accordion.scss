@@ -19,10 +19,12 @@
 		border-top: 1px solid var(--c-bgc-text);
 		border-bottom: 1px solid var(--c-bgc-text);
 		width: 100%;
+		font-family: var(--main-font);
+		font-weight: 400;
 		font-size: 21px;
 		text-align: left;
 		color: var(--c-second-text);
-		transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, outline 0.2s ease-in-out;
+		transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, outline 0.25s ease-in-out;
 
 		@media #{$not-mobile} {
 			font-size: 25px;
@@ -39,7 +41,7 @@
 			background-color: var(--c-second-text);
 			mask: url("../../icons/stack.svg#arrow") no-repeat center / 50px 50px;
 			transform: translateY(-50%) rotate(-180deg);
-			transition: transform 0.5s ease-in-out, background-color 0.3s ease-in-out;
+			transition: transform 0.5s ease-in-out, background-color 0.25s ease-in-out;
 		}
 
 		&:focus {

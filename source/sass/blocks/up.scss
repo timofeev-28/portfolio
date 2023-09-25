@@ -2,7 +2,7 @@
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
-	transition: outline 0.3s ease-in-out;
+	transition: outline 0.25s ease-in-out;
 
 	&::before {
 		content: "";
@@ -13,7 +13,7 @@
 		left: 0;
 		background-color: var(--c-second-text);
 		mask: url("../../icons/stack.svg#up-arrow") no-repeat center / 40px 40px;
-		transition: background-color 0.3s ease-in-out;
+		transition: background-color 0.25s ease-in-out;
 	}
 
 	&:focus {

@@ -20,7 +20,7 @@
 		width: fit-content;
 		font-size: 20px;
 		color: var(--c-second-text);
-		transition: outline 0.2s ease-in-out, color 0.3s ease-in-out;
+		transition: outline 0.25s ease-in-out, color 0.25s ease-in-out;
 
 		@media (min-width: 540px) {
 			font-size: 19px;
@@ -43,7 +43,7 @@
 			width: 32px;
 			background-color: var(--c-social);
 			mask: var(--bgi) no-repeat var(--bgp)/ var(--bgs);
-			transition: background-color 0.3s ease-in-out;
+			transition: background-color 0.25s ease-in-out;
 		}
 
 		&--phone {

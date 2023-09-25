@@ -19,7 +19,7 @@
 		width: 100%;
 		height: var(--burger-line-height);
 		background-color: currentColor;
-		transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+		transition: transform 0.25s ease-in-out, top 0.25s ease-in-out;
 	}
 
 	&::before {
@@ -38,7 +38,7 @@
 		height: var(--burger-line-height);
 		background-color: currentColor;
 		transform: translateY(-50%);
-		transition: transform 0.3s ease-in-out;
+		transition: transform 0.25s ease-in-out;
 	}
 
 	@include hover {
@@ -52,18 +52,18 @@
 		&::before {
 			top: 50%;
 			transform: rotate(45deg);
-			transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+			transition: transform 0.25s ease-in-out, top 0.25s ease-in-out;
 		}
 
 		&::after {
 			top: 50%;
 			transform: rotate(-45deg);
-			transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+			transition: transform 0.25s ease-in-out, top 0.25s ease-in-out;
 		}
 
 		.burger__line {
 			transform: scale(0);
-			transition: transform 0.3s ease-in-out;
+			transition: transform 0.25s ease-in-out;
 		}
 	}
 

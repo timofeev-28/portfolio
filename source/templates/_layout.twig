@@ -6,7 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>{{ projectName }}: {{ pages[pageId].name }}</title>
 	{% include "./detect-format.twig" %}
-	{# <link rel="stylesheet" href="./libs/accordion.min.css"> #}
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="preload" href="./fonts/opensans.woff2" type="font/woff2" as="font" crossorigin>
 	<link rel="preload" href="./fonts/opensansbold.woff2" type="font/woff2" as="font" crossorigin>
@@ -24,7 +23,8 @@
 		</main>
 		{% include "./footer.twig" %}
 	</div>
-	<script src="./libs/accordion.min.js"></script>
+	{% if permalink == "./" %}<script src="./libs/accordion.min.js"></script>{% endif %}
+	{% if permalink == "./" %}<script src="./js/accordion.js"></script>{% endif %}
 	<script src="./js/main.js" type="module"></script>
 </body>
 

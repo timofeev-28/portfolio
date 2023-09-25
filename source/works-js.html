@@ -3,9 +3,36 @@
 {% extends "./templates/_layout.twig" %}
 
 {% block main %}
+	<section class="games">
+		<div class="page__container">
+			<h1 class="games__title title">Кое-что на Java Script</h1>
+			<ul class="games__list list-reset">
+				<li class="games__item games__item--number">
+					<button class="games__btn btn-reset games__btn--active" type="button" data-path="number">"Угадай число"</button>
+				</li>
+				<li class="games__item games__item--cell">
+					<button class="games__btn btn-reset" type="button" data-path="cells">"Угадай ячейку"</button>
+				</li>
+			</ul>
 
-	<div class="page__container">
-		Я дико извиняюсь, но не успел заполнить !
-	</div>
+			<div class="games__content games__content--number games__content--active number" data-target="number">
+				Пардон! Игра уже написана, нужно только перенести её сюда.
+			</div>
+
+
+			<div class="games__content games__content--cells cells" data-target="cells">
+				<h2 class="cells__title">Игра "Угадай&nbsp;Ячейку"</h2>
+				<p class="cells__descr">Компьютер случайным образом запоминает 10 ячеек из таблицы. Нужно жать на клетки, пока не будут найдены все загаданные.</p>
+				<div class="cells__wrap">
+					<table class="cells__table"></table>
+					<p class="cells__answer cells__answer--attempt">Попытки<span class="cells__count cells__count-attempt">0</span></p>
+					<p class="cells__answer cells__answer--cells">Угадано<span class="cells__count cells__count-open-cells">0</span></p>
+					<p class="cells__massage"></p>
+				</div>
+			</div>
+
+
+		</div>
+	</section>
 
 {% endblock %}

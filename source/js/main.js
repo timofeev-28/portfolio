@@ -1,5 +1,7 @@
-import { openCloseBurger } from "./burger.js"
-import { openAccordion } from "./accordion.js"
+import { openBurger } from "./burger.js"
+import { openTabs } from "./tabs.js"
+import { createGameCells } from "./cells.js"
 
-openCloseBurger()
-openAccordion()
+openBurger()
+openTabs()
+createGameCells()

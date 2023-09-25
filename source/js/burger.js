@@ -21,9 +21,9 @@ const closeBurger = () => {
 	})
 }
 
-const openCloseBurger = () => {
+const openBurger = () => {
 	burgerToggle.addEventListener(`click`, burgerClickHandler)
 	closeBurger()
 }
 
-export {openCloseBurger}
+export {openBurger}

@@ -6,4 +6,4 @@ const openAccordion = () => {
 	})
 }
 
-export {openAccordion}
+openAccordion()
