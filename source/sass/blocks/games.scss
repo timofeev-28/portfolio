@@ -12,6 +12,16 @@
 		margin-bottom: 10px;
 		padding-bottom: 8px;
 		border-bottom: 1px solid var(--c-border);
+
+		@media #{$tablet-only} {
+			margin-bottom: 14px;
+			padding-bottom: 15px;
+		}
+
+		@media #{$desktop-only} {
+			margin-bottom: 18px;
+			padding-bottom: 17px;
+		}
 	}
 
 	&__item {
@@ -33,6 +43,18 @@
 		font-weight: 400;
 		color: var(--c-second-text);
 		transition: color 0.25s ease-in-out;
+
+		@media #{$tablet-only} {
+			font-size: 20px;
+		}
+
+		@media #{$not-tablet} {
+			font-size: 22px;
+		}
+
+		@media #{$desktop-only} {
+			font-size: 24px;
+		}
 
 		&:focus {
 			outline: none;
