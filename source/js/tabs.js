@@ -16,8 +16,8 @@ const buttonClickHendler = (event) => {
 	contentTarget.classList.add(`games__content--active`)
 }
 
-const openTabs = () => {
+const initTabs = () => {
 	gamesBtns.forEach((button) => button.addEventListener(`click`, buttonClickHendler))
 }
 
-export { openTabs }
+export { initTabs }

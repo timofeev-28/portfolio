@@ -97,4 +97,4 @@ const createGameCells = () => {
 	setEventListeners() // поставили счётчики событий
 }
 
-export {createGameCells}
+createGameCells()

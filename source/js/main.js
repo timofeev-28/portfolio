@@ -1,7 +1,7 @@
-import { openBurger } from "./burger.js"
-import { openTabs } from "./tabs.js"
-import { createGameCells } from "./cells.js"
+import { initBurger } from "./burger.js"
+import { initTabs } from "./tabs.js"
+import { initDropdown } from "./dropdown.js"
 
-openBurger()
-openTabs()
-createGameCells()
+initBurger()
+initTabs()
+initDropdown()

@@ -1,6 +1,6 @@
 const navigation = document.querySelector(`.navigation`)
 const burgerToggle = document.querySelector(`.burger`)
-const menuLinks = document.querySelectorAll(`.navigation__link`)
+const menuLinks = document.querySelectorAll(`.navigation__js`)
 
 const burgerClickHandler = () => {
 	burgerToggle.classList.toggle(`burger--active`)
@@ -21,9 +21,9 @@ const closeBurger = () => {
 	})
 }
 
-const openBurger = () => {
+const initBurger = () => {
 	burgerToggle.addEventListener(`click`, burgerClickHandler)
 	closeBurger()
 }
 
-export {openBurger}
+export {initBurger}

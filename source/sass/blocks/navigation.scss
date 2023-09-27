@@ -32,6 +32,7 @@
 		position: relative;
 		flex-direction: initial;
 		align-items: center;
+		flex-wrap: wrap;
 		column-gap: 35px;
 		row-gap: 10px;
 		padding-block: 0;
@@ -83,12 +84,6 @@
 	width: fit-content;
 	font-size: 26px;
 	transition: color 0.25s ease-in-out, outline 0.25s ease-in-out;
-
-	// потом убрать
-	&--dis {
-		color: #808080;
-		cursor: not-allowed;
-	}
 
 	@media #{$not-tablet} {
 		display: block;
@@ -172,4 +167,37 @@
 	&:active::before {
 		background-color: var(--c-active);
 	}
+}
+
+// выпадашка из навигации
+.navigation__link--js.js-active {
+	@media #{$not-tablet} {
+		border-top-right-radius: 3px;
+		border-top-left-radius: 3px;
+		background: linear-gradient(to right, #0d5536, #0e7046);
+		background-color: #0d5837;
+	}
+}
+
+.navigation__list-works {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	left: 0;
+	z-index: 1;
+	display: none;
+	padding-block: 10px;
+	padding-inline: 5px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	background: linear-gradient(to right, #0d5536, #0e7046);
+	background-color: #0d5837;
+}
+
+.navigation__item-works:not(:last-child) {
+	margin-bottom: 8px;
+}
+
+.navigation__list-works.js-active {
+	display: block;
 }
