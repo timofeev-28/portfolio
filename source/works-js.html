@@ -16,9 +16,25 @@
 			</ul>
 
 			<div class="games__content games__content--number games__content--active number" data-target="number">
-				Пардон! Игра уже написана, нужно только перенести её сюда.
+				<h2 class="number__title">Игра "Угадай&nbsp;Число"</h2>
+				<p class="number__descr">Компьютер загадывает число&nbsp;от&nbsp;1&nbsp;до&nbsp;100</p>
+				<span class="number__condition">ЧИСЛО ЗАГАДАНО &#10004;</span>
+				<div class="number__wrap">
+					<span class="number__mysterious-number"></span>
+					<button class="number__btn-show-toggle btn-reset">Показать / Скрыть Число</button>
+				</div>
+				<div class="number__wrap-label">
+					<label class="number__label">
+						Введите число от 1 до 100
+						<input class="number__input" type="number">
+					</label>
+					<button class="number__btn btn-reset"><span class="number__timer">60</span>Проверить</button>
+				</div>
+				<span class="number__condition number__answer">Ответ</span>
+				<span class="number__span">Введённые числа</span>
+				<span class="number__numbers"></span>
+				<a class="number__link-new-number" href="./works-js.html">Загадать новое число</a>
 			</div>
-
 
 			<div class="games__content games__content--cells cells" data-target="cells">
 				<h2 class="cells__title">Игра "Угадай&nbsp;Ячейку"</h2>

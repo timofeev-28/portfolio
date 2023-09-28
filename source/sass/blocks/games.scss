@@ -4,6 +4,14 @@
 
 	&__title {
 		text-align: center;
+
+		@media (min-width: 540px) {
+			font-size: 33px;
+		}
+
+		@media #{$not-tablet} {
+			font-size: 38px;
+		}
 	}
 
 	&__list {
