@@ -21,11 +21,13 @@ const getNumber = () => {
 
 	let id = setInterval(function() {
 		i--
+		countTimer.classList.add(`js-timer`)
 
 		if (i === -1) {
 			stopTimer(id)
 			answer.innerHTML = `Извините, но время кончилось! &#129335;`
 			btnCheck.disabled = true
+			countTimer.classList.remove(`js-timer`)
 		} else {
 			countTimer.textContent = i
 		}

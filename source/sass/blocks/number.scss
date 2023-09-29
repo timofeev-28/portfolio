@@ -132,6 +132,10 @@
 		/* stylelint-disable-next-line property-no-vendor-prefix */
 		-moz-appearance: none;
 
+		@media #{$not-tablet} {
+			font-size: 30px;
+		}
+
 		&::-webkit-outer-spin-button,
 		&::-webkit-inner-spin-button {
 			appearance: none;
@@ -193,7 +197,7 @@
 
 		&:disabled {
 			box-shadow: none;
-			cursor: not-allowed;
+			cursor: initial;
 		}
 	}
 
@@ -211,6 +215,7 @@
 		color: #ffae00;
 		border: 1px solid #119b11;
 		border-radius: 3px;
+		transition: box-shadow 0.25s ease-in-out;
 
 		&::after {
 			content: "timer";
@@ -278,4 +283,8 @@
 
 .js-show.number__mysterious-number::after {
 	background-color: transparent;
+}
+
+.js-timer {
+	box-shadow: 0 0 8px 2px var(--c-number-text);
 }
