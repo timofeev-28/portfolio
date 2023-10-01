@@ -23,9 +23,6 @@
 }
 
 .page-wrapper {
-	display: grid;
-	grid-template-rows: min-content 1fr min-content;
-	min-block-size: 100vh;
 	overflow: hidden;
 }
 

@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>{{ projectName }}: {{ pages[pageId].name }}</title>
 	{% include "./detect-format.twig" %}
+	<link rel="stylesheet" href="./libs/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="./libs/graph-modal.min.css"/>
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="preload" href="./fonts/opensans.woff2" type="font/woff2" as="font" crossorigin>
 	<link rel="preload" href="./fonts/opensansbold.woff2" type="font/woff2" as="font" crossorigin>
@@ -25,6 +27,10 @@
 	</div>
 	{% if permalink == "./" %}<script src="./libs/accordion.min.js"></script>{% endif %}
 	{% if permalink == "./" %}<script src="./js/accordion.js"></script>{% endif %}
+	{% if permalink == "./" %}<script src="./libs/swiper-bundle.min.js"></script>{% endif %}
+	{% if permalink == "./" %}<script src="./js/swiper.js"></script>{% endif %}
+	{% if permalink == "./" %}<script src="./libs/graph-modal.min.js"></script>{% endif %}
+	{% if permalink == "./" %}<script src="./js/graph-modal.js"></script>{% endif %}
 	{% if permalink == "./works-js.html" %}<script src="./js/cells.js"></script>{% endif %}
 	{% if permalink == "./works-js.html" %}<script src="./js/number.js"></script>{% endif %}
 	<script src="./js/main.js" type="module"></script>

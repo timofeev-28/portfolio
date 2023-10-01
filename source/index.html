@@ -3,7 +3,6 @@
 {% extends "./templates/_layout.twig" %}
 
 {% block main %}
-
 	<h1 class="visually-hidden">Верстальщик с опытом работы</h1>
 	<section class="hero">
 		<div class="hero__container page__container">
@@ -30,7 +29,6 @@
 			</ul>
 		</div>
 	</section>
-
 	<section class="about">
 		<div class="page__container about__container">
 			<h2 class="about__title title">Обо мне</h2>
@@ -80,4 +78,51 @@
 		</div>
 	</section>
 
+	<section class="cert">
+		<div class="page__container cert__container">
+			<h2 class="cert__title title">Сертификаты об обучении</h2>
+			<div class="cert__swiper-wrapper">
+				<div class="cert__swiper swiper">
+					<div class="swiper-wrapper">
+						<div class="cert__slide swiper-slide">
+							<div class="cert__img-wrapper">
+								<img class="cert__img" src="img/html-Skillbox.jpg" alt="Сертификат Профессиональная вёрстка сайтов образовательной платформы HTML-Академия">
+							</div>
+						</div>
+						<div class="cert__slide swiper-slide">
+							<div class="cert__img-wrapper">
+								<img class="cert__img" src="img/html-1-ru.jpg" alt="Сертификат Профессиональная вёрстка сайтов образовательной платформы HTML-Академия">
+							</div>
+						</div>
+						<div class="cert__slide swiper-slide">
+							<div class="cert__img-wrapper">
+								<img class="cert__img" src="img/html-2-ru.jpg" alt="Сертификат Профессиональная вёрстка сайтов образовательной платформы HTML-Академия">
+							</div>
+						</div>
+						<div class="cert__slide swiper-slide">
+							<div class="cert__img-wrapper">
+								<img class="cert__img" src="img/js-1-ru.jpg" alt="Сертификат Профессиональная вёрстка сайтов образовательной платформы HTML-Академия">
+							</div>
+						</div>
+					</div>
+					<div class="cert__button-nav swiper-button-prev"></div>
+					<div class="cert__button-nav swiper-button-next"></div>
+				</div>
+				<div class="swiper-scrollbar"></div>
+			</div>
+
+			<div class="cert__graph-modal graph-modal">
+				<div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="first">
+					<button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+					<div class="graph-modal__content">
+						<!-- контент модального окна -->
+						<div class="graph-modal__img-wrapper">
+							<img class="graph-modal__img" src="img/html-Skillbox.jpg" alt="Сертификат Профессиональная вёрстка сайтов образовательной платформы HTML-Академия">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
 {% endblock %}
