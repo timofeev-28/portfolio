@@ -13,13 +13,17 @@
 		margin-inline: auto;
 		padding-top: 10px;
 		padding-inline: 10px;
-		padding-bottom: 30px;
+		padding-bottom: 62px;
 		width: 93%;
 		border-radius: 5px;
 		box-shadow: 0 0 5px 3px var(--c-bgc-text);
 
 		@media #{$not-mobile} {
 			width: 85%;
+		}
+
+		@media #{$not-tablet} {
+			padding-bottom: 70px;
 		}
 
 		@media #{$desktop-only} {
@@ -29,11 +33,6 @@
 		}
 	}
 
-	// &__img-wrapper {
-	// 	border-radius: 5px;
-	// 	overflow: hidden;
-	// }
-
 	&__img {
 		display: block;
 		border-radius: 5px;
@@ -42,15 +41,58 @@
 
 	&__swiper-wrapper .swiper-scrollbar.swiper-scrollbar-horizontal {
 		top: auto;
-		bottom: 20px;
+		bottom: 50px;
+
+		@media #{$not-tablet} {
+			bottom: 55px;
+		}
 	}
 
 	&__swiper-wrapper .swiper-scrollbar-drag {
 		background: var(--c-social);
 	}
 
+	&__button-nav {
+		top: auto;
+		bottom: 10px;
+		width: 70px;
+		height: 28px;
+		border-radius: 7px;
+		border: 1px solid var(--c-social);
+
+		@media #{$not-tablet} {
+			bottom: 13px;
+			width: 80px;
+			height: 30px;
+		}
+	}
+
+	&__button-nav--prev {
+		left: 25%;
+
+		@media (min-width: 540px) {
+			left: 30%;
+		}
+
+		@media #{$not-tablet} {
+			left: 35%;
+		}
+	}
+
+	&__button-nav--next {
+		right: 25%;
+
+		@media (min-width: 540px) {
+			right: 30%;
+		}
+
+		@media #{$not-tablet} {
+			right: 35%;
+		}
+	}
+
 	&__button-nav::after {
-		font-size: 32px;
+		font-size: 20px;
 		color: var(--c-social);
 	}
 }
