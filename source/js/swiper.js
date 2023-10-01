@@ -7,7 +7,7 @@ let mySwiper = new Swiper(slider, {
 	slidesPerGroup: 2,
 
 	breakpoints: {
-		768: {
+		540: {
 			slidesPerView: 3,
 			spaceBetween: 15,
 			slidesPerGroup: 3,
@@ -18,11 +18,6 @@ let mySwiper = new Swiper(slider, {
 		el: `.swiper-scrollbar`,
 		draggable: true,
 	},
-
-	// pagination: {
-	// 	el: `.swiper-pagination`,
-	// 	type: `fraction`,
-	// },
 
 	navigation: {
 		nextEl: `.swiper-button-next`,

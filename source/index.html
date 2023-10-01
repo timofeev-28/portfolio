@@ -84,26 +84,18 @@
 			<div class="cert__swiper-wrapper">
 				<div class="cert__swiper swiper">
 					<div class="swiper-wrapper">
-						<div class="cert__slide swiper-slide">
-							<div class="cert__img-wrapper">
-								<img class="cert__img" src="img/html-Skillbox.jpg" alt="Сертификат Профессиональная вёрстка сайтов образовательной платформы HTML-Академия">
-							</div>
-						</div>
-						<div class="cert__slide swiper-slide">
-							<div class="cert__img-wrapper">
-								<img class="cert__img" src="img/html-1-ru.jpg" alt="Сертификат Профессиональная вёрстка сайтов образовательной платформы HTML-Академия">
-							</div>
-						</div>
-						<div class="cert__slide swiper-slide">
-							<div class="cert__img-wrapper">
-								<img class="cert__img" src="img/html-2-ru.jpg" alt="Сертификат Профессиональная вёрстка сайтов образовательной платформы HTML-Академия">
-							</div>
-						</div>
-						<div class="cert__slide swiper-slide">
-							<div class="cert__img-wrapper">
-								<img class="cert__img" src="img/js-1-ru.jpg" alt="Сертификат Профессиональная вёрстка сайтов образовательной платформы HTML-Академия">
-							</div>
-						</div>
+						<button class="cert__slide swiper-slide btn-reset" type="button" data-graph-path="first">
+							<img class="cert__img" src="img/html-Skillbox.jpg" alt="Сертификат Профессиональная вёрстка сайтов образовательной платформы HTML-Академия">
+						</button>
+						<button class="cert__slide swiper-slide btn-reset" type="button" data-graph-path="two">
+							<img class="cert__img" src="img/html-1-ru.jpg" alt="Сертификат Профессиональная вёрстка сайтов образовательной платформы HTML-Академия">
+						</button>
+						<button class="cert__slide swiper-slide btn-reset" type="button" data-graph-path="three">
+							<img class="cert__img" src="img/html-2-ru.jpg" alt="Сертификат Профессиональная вёрстка сайтов образовательной платформы HTML-Академия">
+						</button>
+						<button class="cert__slide swiper-slide btn-reset" type="button" data-graph-path="four">
+							<img class="cert__img" src="img/js-1-ru.jpg" alt="Сертификат Профессиональная вёрстка сайтов образовательной платформы HTML-Академия">
+						</button>
 					</div>
 					<div class="cert__button-nav swiper-button-prev"></div>
 					<div class="cert__button-nav swiper-button-next"></div>
@@ -111,14 +103,30 @@
 				<div class="swiper-scrollbar"></div>
 			</div>
 
-			<div class="cert__graph-modal graph-modal">
+			<!-- МОДАЛКА СЛАЙДЕРА (сертификаты)-->
+			<div class="graph-modal">
 				<div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="first">
-					<button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+					<button class="graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
 					<div class="graph-modal__content">
-						<!-- контент модального окна -->
-						<div class="graph-modal__img-wrapper">
-							<img class="graph-modal__img" src="img/html-Skillbox.jpg" alt="Сертификат Профессиональная вёрстка сайтов образовательной платформы HTML-Академия">
-						</div>
+						<img class="graph-modal__img" src="img/html-Skillbox.jpg" alt="Сертификат Профессиональная вёрстка сайтов образовательной платформы HTML-Академия">
+					</div>
+				</div>
+				<div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="two">
+					<button class="graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+					<div class="graph-modal__content">
+						<img class="cert__img" src="img/html-1-ru.jpg" alt="Сертификат Профессиональная вёрстка сайтов образовательной платформы HTML-Академия">
+					</div>
+				</div>
+				<div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="three">
+					<button class="graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+					<div class="graph-modal__content">
+						<img class="graph-modal__img" src="img/html-2-ru.jpg" alt="Сертификат Профессиональная вёрстка сайтов образовательной платформы HTML-Академия">
+					</div>
+				</div>
+				<div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="four">
+					<button class="graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+					<div class="graph-modal__content">
+						<img class="graph-modal__img" src="img/js-1-ru.jpg" alt="Сертификат Профессиональная вёрстка сайтов образовательной платформы HTML-Академия">
 					</div>
 				</div>
 			</div>

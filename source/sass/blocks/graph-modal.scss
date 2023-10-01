@@ -1,0 +1,45 @@
+.graph-modal {
+	&__container {
+		border-radius: 5px;
+		padding-top: 38px;
+
+		@media (min-width: 540px) {
+			width: 80%;
+		}
+
+		@media #{$not-mobile} {
+			width: 70%;
+		}
+
+		@media #{$not-tablet} {
+			width: 60%;
+		}
+
+		@media #{$desktop-only} {
+			width: 41%;
+		}
+	}
+
+	&__img {
+		border-radius: 5px;
+		overflow: hidden;
+	}
+
+	&__close {
+		top: 8px;
+		right: 11px;
+		width: 24px;
+		height: 24px;
+		transition: outline 0.25s ease-in-out;
+
+		&:focus {
+			outline: none;
+		}
+
+		&:focus-visible {
+			border-radius: 2px;
+			outline: 1px solid var(--c-active);
+			outline-offset: 3px;
+		}
+	}
+}

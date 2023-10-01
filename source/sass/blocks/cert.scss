@@ -29,13 +29,15 @@
 		}
 	}
 
-	&__img-wrapper {
-		border-radius: 5px;
-		overflow: hidden;
-	}
+	// &__img-wrapper {
+	// 	border-radius: 5px;
+	// 	overflow: hidden;
+	// }
 
 	&__img {
 		display: block;
+		border-radius: 5px;
+		overflow: hidden;
 	}
 
 	&__swiper-wrapper .swiper-scrollbar.swiper-scrollbar-horizontal {
