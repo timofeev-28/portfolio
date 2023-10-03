@@ -1,6 +1,6 @@
 const navigation = document.querySelector(`.navigation`)
 const burgerToggle = document.querySelector(`.burger`)
-const menuLinks = document.querySelectorAll(`.navigation__js`)
+const menuLinks = document.querySelectorAll(`.navigation-js`)
 
 const burgerClickHandler = () => {
 	burgerToggle.classList.toggle(`burger--active`)
@@ -10,7 +10,7 @@ const burgerClickHandler = () => {
 
 const linksClickHandler = () => {
 	burgerToggle.classList.remove(`burger--active`)
-	navigation.classList.remove(`nav--active`)
+	navigation.classList.remove(`navigation--active`)
 	document.body.classList.remove(`stop-scroll`)
 }
 
