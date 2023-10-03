@@ -5,6 +5,8 @@ let mySwiper = new Swiper(slider, {
 	slidesPerView: 2,
 	spaceBetween: 10,
 	slidesPerGroup: 2,
+	swipe: true,
+	speed: 800,
 
 	breakpoints: {
 		540: {
