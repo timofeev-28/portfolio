@@ -4,6 +4,29 @@
 
 	&__container {
 		position: relative;
+
+		@media #{$not-tablet} {
+			&::before {
+				content: "";
+				position: absolute;
+				top: 17px;
+				right: 0;
+				padding: 7px;
+				width: 200px;
+				height: 300px;
+				border-radius: 7px;
+				background: url("../../img/about__photo-1_2x.jpg") no-repeat center / 186px 286px;
+				box-shadow: 0 0 3px 2px var(--c-bgc-text);
+			}
+		}
+
+		@media #{$desktop-only} {
+			&::before {
+				content: "";
+				top: 17px;
+				right: 28px;
+			}
+		}
 	}
 
 	@media #{$tablet-only} {
@@ -16,27 +39,6 @@
 
 	&__title {
 		margin-bottom: 15px;
-	}
-
-	&__image-wrap {
-		position: absolute;
-		top: 17px;
-		right: 28px;
-		padding: 7px;
-		display: none;
-		border-radius: 7px;
-		box-shadow: 0 0 2px 2px var(--c-bgc-text);
-
-		@media #{$not-tablet} {
-			display: block;
-			top: 17px;
-			right: 0;
-		}
-
-		@media #{$desktop-only} {
-			top: 17px;
-			right: 28px;
-		}
 	}
 
 	&__image {
