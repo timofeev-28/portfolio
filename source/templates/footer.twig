@@ -7,12 +7,29 @@
 		<ul class="navigation__list list-reset">
 			{% for page in pages %}
 			<li class="navigation__item {% if permalink == page.path %} navigation__item--current {% endif %}">
-				<a class="navigation__link" href="{{ page.path }}" {% if permalink == page.path %} aria-current="page"{% endif %}>{{ page.name }}</a>
+				<a class="navigation__link  navigation-js" href="{{ page.path }}" {% if permalink == page.path %} aria-current="page"{% endif %}>{{ page.name }}</a>
 			</li>
 			{% endfor %}
 		</ul>
-		<a class="navigation__link navigation__link--dis" href="javascript:undefined">Мои работы</a>
-		<a class="navigation__link navigation__link--gh" href="https://github.com/timofeev-28" target="_blank" aria-label="Мой профиль на Гитхабе"></a>
+		<ul class="navigation__list list-reset">
+			<li class="navigation__item">
+				<a class="navigation__link navigation__link--js" href="javascript:undefined">Мои работы</a>
+				<ul class="navigation__list-works list-reset">
+					<li class="navigation__item-works">
+						<a class="navigation__link navigation-js navigation__link--works" href="https://mishka.timofeev-28.ru" target="_blank">Mishka</a>
+					</li>
+					<li class="navigation__item-works">
+						<a class="navigation__link navigation-js navigation__link--works" href="https://blanchard.timofeev-28.ru" target="_blank">Blanchard</a>
+					</li>
+					<li class="navigation__item-works">
+						<a class="navigation__link navigation-js navigation__link--works" href="https://evclid.timofeev-28.ru" target="_blank">Evclid</a>
+					</li>
+				</ul>
+			</li>
+			<li class="navigation__item">
+				<a class="navigation__link navigation-js navigation__link--gh" href="https://github.com/timofeev-28" target="_blank" aria-label="Мой профиль на Гитхабе"></a>
+			</li>
+		</ul>
 	</nav>
 	<ul class="footer__list-social social list-reset">
 		<li class="social__item">

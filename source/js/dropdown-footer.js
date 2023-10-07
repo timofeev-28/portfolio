@@ -1,6 +1,7 @@
-const linkNav = document.querySelector(`.navigation__link--js`)
-const dropdown = document.querySelector(`.navigation__list-works`)
-const linksWorks = document.querySelectorAll(`.navigation__link--works`)
+const footer = document.querySelector(`.footer`)
+const linkNav = footer.querySelector(`.navigation__link--js`)
+const dropdown = footer.querySelector(`.navigation__list-works`)
+const linksWorks = footer.querySelectorAll(`.navigation__link--works`)
 
 const documentClickHendler = (event) => {
 	if (!event.target.closest(`.js-active`)) {
@@ -32,9 +33,9 @@ const closeDropdown = () => {
 	})
 }
 
-const initDropdown = () => {
+const initDropdownFooter = () => {
 	linkNav.addEventListener(`click`, linkClickHandler)
 	closeDropdown()
 }
 
-export { initDropdown }
+export { initDropdownFooter }
