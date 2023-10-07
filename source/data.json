@@ -38,6 +38,17 @@
 					"height": 140
 				}
 			]
+		},
+		"logo": {
+			"ext": "png",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "mobile",
+					"width": 365,
+					"height": 36
+				}
+			]
 		}
 	}
 }
