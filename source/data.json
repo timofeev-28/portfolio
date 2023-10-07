@@ -49,6 +49,50 @@
 					"height": 36
 				}
 			]
+		},
+		"html-1": {
+			"ext": "jpg",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "mobile",
+					"width": 129,
+					"height": 181
+				}
+			]
+		},
+		"html-2": {
+			"ext": "jpg",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "mobile",
+					"width": 129,
+					"height": 181
+				}
+			]
+		},
+		"html-skillbox": {
+			"ext": "jpg",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "mobile",
+					"width": 129,
+					"height": 181
+				}
+			]
+		},
+		"js": {
+			"ext": "jpg",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "mobile",
+					"width": 129,
+					"height": 181
+				}
+			]
 		}
 	}
 }

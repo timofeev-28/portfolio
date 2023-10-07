@@ -82,16 +82,16 @@
 				<div class="cert__swiper swiper">
 					<div class="swiper-wrapper">
 						<button class="cert__slide swiper-slide btn-reset" type="button" data-graph-path="first">
-							<img class="cert__img" src="img/html-Skillbox.jpg" alt="Сертификат Профессиональная вёрстка сайтов образовательной платформы HTML-Академия">
+							{% include "./templates/picture.twig" with {name: "html-skillbox", class: "cert__img", alt: "Сертификат Профессиональная вёрстка сайтов образовательной платформы Skillbox."} %}
 						</button>
 						<button class="cert__slide swiper-slide btn-reset" type="button" data-graph-path="two">
-							<img class="cert__img" src="img/html-1-ru.jpg" alt="Сертификат Профессиональная вёрстка сайтов образовательной платформы HTML-Академия">
+							{% include "./templates/picture.twig" with {name: "html-1", class: "cert__img", alt: "Сертификат Профессиональная вёрстка сайтов образовательной платформы HTML-Академия."} %}
 						</button>
 						<button class="cert__slide swiper-slide btn-reset" type="button" data-graph-path="three">
-							<img class="cert__img" src="img/html-2-ru.jpg" alt="Сертификат Профессиональная вёрстка сайтов образовательной платформы HTML-Академия">
+							{% include "./templates/picture.twig" with {name: "html-2", class: "cert__img", alt: "Сертификат Адаптивная вёрстка и автоматизация образовательной платформы HTML-Академия."} %}
 						</button>
 						<button class="cert__slide swiper-slide btn-reset" type="button" data-graph-path="four">
-							<img class="cert__img" src="img/js-1-ru.jpg" alt="Сертификат Профессиональная вёрстка сайтов образовательной платформы HTML-Академия">
+							{% include "./templates/picture.twig" with {name: "js", class: "cert__img", alt: "Сертификат Java Script Професиональная разработка веб-интерфейсов образовательной платформы HTML-Академия."} %}
 						</button>
 					</div>
 				</div>
@@ -105,25 +105,25 @@
 				<div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="first">
 					<button class="graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
 					<div class="graph-modal__content">
-						<img class="graph-modal__img" src="img/html-Skillbox.jpg" alt="Сертификат Профессиональная вёрстка сайтов образовательной платформы HTML-Академия">
+						{% include "./templates/picture.twig" with {name: "html-skillbox", class: "graph-modal__img", alt: "Сертификат Профессиональная вёрстка сайтов образовательной платформы Skillbox."} %}
 					</div>
 				</div>
 				<div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="two">
 					<button class="graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
 					<div class="graph-modal__content">
-						<img class="cert__img" src="img/html-1-ru.jpg" alt="Сертификат Профессиональная вёрстка сайтов образовательной платформы HTML-Академия">
+						{% include "./templates/picture.twig" with {name: "html-1", class: "graph-modal__img", alt: "Сертификат Профессиональная вёрстка сайтов образовательной платформы HTML-Академия."} %}
 					</div>
 				</div>
 				<div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="three">
 					<button class="graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
 					<div class="graph-modal__content">
-						<img class="graph-modal__img" src="img/html-2-ru.jpg" alt="Сертификат Профессиональная вёрстка сайтов образовательной платформы HTML-Академия">
+						{% include "./templates/picture.twig" with {name: "html-2", class: "graph-modal__img", alt: "Сертификат Адаптивная вёрстка и автоматизация образовательной платформы HTML-Академия."} %}
 					</div>
 				</div>
 				<div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="four">
 					<button class="graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
 					<div class="graph-modal__content">
-						<img class="graph-modal__img" src="img/js-1-ru.jpg" alt="Сертификат Профессиональная вёрстка сайтов образовательной платформы HTML-Академия">
+						{% include "./templates/picture.twig" with {name: "js", class: "graph-modal__img", alt: "Сертификат Java Script Професиональная разработка веб-интерфейсов образовательной платформы HTML-Академия."} %}
 					</div>
 				</div>
 			</div>

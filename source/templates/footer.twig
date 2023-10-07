@@ -3,7 +3,6 @@
 	<a class="footer__logo-link logo" href="./" {% if permalink == "./" %}aria-current="page"{% endif %}>
 		{% include "./picture.twig" with {name: "logo", class: "logo__img", alt: "Логотип - слово портфолио."} %}
 	</a>
-
 	<nav class="footer__navigation navigation">
 		<ul class="navigation__list list-reset">
 			{% for page in pages %}
@@ -15,7 +14,6 @@
 		<a class="navigation__link navigation__link--dis" href="javascript:undefined">Мои работы</a>
 		<a class="navigation__link navigation__link--gh" href="https://github.com/timofeev-28" target="_blank" aria-label="Мой профиль на Гитхабе"></a>
 	</nav>
-
 	<ul class="footer__list-social social list-reset">
 		<li class="social__item">
 			<a class="social__link social__link--phone" href="tel:+79043356128">+7(904)335-61-28</a>
