@@ -1,6 +1,6 @@
 {
 	"name": "portfolio",
-	"description": "Портфолио вертальщика Д.Тимофеева",
+	"description": "Портфолио верстальщика Д.Тимофеева",
 	"private": true,
 	"type": "module",
 	"engines": {

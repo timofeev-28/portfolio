@@ -44,6 +44,7 @@
 	&__swiper-wrapper .swiper-scrollbar.swiper-scrollbar-horizontal {
 		top: auto;
 		bottom: 50px;
+		height: 2px;
 
 		@media #{$not-tablet} {
 			bottom: 55px;
