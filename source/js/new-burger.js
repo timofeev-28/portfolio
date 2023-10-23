@@ -7,10 +7,12 @@ const burgerRemoveActive = () => {
 	burger.classList.remove(`burger--active`)
 	navigation.classList.remove(`navigation--active`)
 	document.body.classList.remove(`stop-scroll`)
+	document.removeEventListener(`click`, documentClickHendler)
+	closeBurgerLinksRemove()
 }
 
-// закрытие бургера по клику вне навигации
-const documentClickHendler = (event) => {
+// закрытие бургера
+function documentClickHendler (event) {
 	if (!event.target.closest(`.navigation--active`) && !event.target.closest(`.burger--active`)) {
 		burgerRemoveActive()
 	}
@@ -28,7 +30,7 @@ const closeBurgerLinksAdd = () => {
 }
 
 // удаляется слушатель событий при клике на ссылки бургера
-const closeBurgerLinksRemove = () => {
+function closeBurgerLinksRemove () {
 	menuLinks.forEach((link) => {
 		link.removeEventListener(`click`, linksClickHandler)
 	})
