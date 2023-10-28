@@ -125,6 +125,7 @@ const ASSETS_PATHS = [
 	`${SOURCE_ROOT}img/**/*.svg`,
 	`${SOURCE_ROOT}favicons/*`,
 	`${SOURCE_ROOT}*.webmanifest`,
+	`${SOURCE_ROOT}*libs/*`,
 ]
 
 export function copyAssets () {
