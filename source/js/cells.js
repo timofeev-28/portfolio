@@ -92,9 +92,11 @@ let setEventListeners = () => {
 }
 
 const createGameCells = () => {
-	createTable(lines, columns) // создали таблицу
-	setHiddenSells() // пометили загаданные ячейки
-	setEventListeners() // поставили счётчики событий
+	if (document.body.contains(table)) {
+		createTable(lines, columns) // создали таблицу
+		setHiddenSells() // пометили загаданные ячейки
+		setEventListeners() // поставили счётчики событий
+	}
 }
 
-createGameCells()
+export { createGameCells }

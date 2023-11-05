@@ -2,6 +2,10 @@
 const gamesBtns = document.querySelectorAll(`.games__btn`)
 const gamesContents = document.querySelectorAll(`.games__content`)
 
+// для проверки наличия элементов на странице
+const gamesBtn = document.querySelector(`.games__btn`)
+const gamesContent = document.querySelector(`.games__content`)
+
 const buttonClickHendler = (event) => {
 	event.preventDefault()
 
@@ -17,7 +21,9 @@ const buttonClickHendler = (event) => {
 }
 
 const initTabs = () => {
-	gamesBtns.forEach((button) => button.addEventListener(`click`, buttonClickHendler))
+	if (document.body.contains(gamesBtn) && document.body.contains(gamesContent)) {
+		gamesBtns.forEach((button) => button.addEventListener(`click`, buttonClickHendler))
+	}
 }
 
 export { initTabs }
