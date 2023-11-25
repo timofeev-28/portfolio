@@ -7,7 +7,7 @@
 			<ul class="navigation__list list-reset">
 				{% for page in pages %}
 				<li class="navigation__item {% if permalink == page.path %} navigation__item--current {% endif %}">
-					<a class="navigation__link  navigation-js" href="{{ page.path }}" {% if permalink == page.path %} aria-current="page"{% endif %}>{{ page.name }}</a>
+					<a class="navigation__link navigation-js" href="{{ page.path }}" {% if permalink == page.path %} aria-current="page"{% endif %}>{{ page.name }}</a>
 				</li>
 				{% endfor %}
 			</ul>
@@ -33,7 +33,7 @@
 					</ul>
 				</li>
 				<li class="navigation__item">
-					<a class="navigation__link navigation-js navigation__link--gh" href="https://github.com/timofeev-28" target="_blank" aria-label="Мой профиль на Гитхабе"></a>
+					<a class="navigation__link navigation-js navigation__link--gh" href="https://github.com/timofeev-28/portfolio" target="_blank" aria-label="Мой профиль на Гитхабе"></a>
 				</li>
 			</ul>
 		</nav>
