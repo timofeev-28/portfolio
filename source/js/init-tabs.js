@@ -11,6 +11,7 @@ const buttonClickHendler = (event) => {
 
 	const path = event.target.dataset.path
 	const btnTarget = event.target
+	console.log(btnTarget)
 	const contentTarget = document.querySelector(`[data-target='${path}']`)
 
 	gamesBtns.forEach((button) => button.classList.remove(`games__btn--active`))

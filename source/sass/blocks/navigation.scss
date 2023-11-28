@@ -170,7 +170,7 @@
 }
 
 // выпадашка из навигации
-.navigation__link--js.js-active {
+.navigation__link--js.is-active {
 	@media #{$not-tablet} {
 		border-top-right-radius: 3px;
 		border-top-left-radius: 3px;
@@ -203,6 +203,6 @@
 	margin-bottom: 8px;
 }
 
-.navigation__list-works.js-active {
+.navigation__list-works.is-active {
 	display: block;
 }

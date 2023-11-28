@@ -3,18 +3,18 @@ const dropdown = document.querySelector(`.navigation__list-works`)
 const linksWorks = document.querySelectorAll(`.navigation__link--works`)
 
 const documentClickHendler = (event) => {
-	if (!event.target.closest(`.js-active`)) {
-		linkNav.classList.remove(`js-active`)
-		dropdown.classList.remove(`js-active`)
+	if (!event.target.closest(`.is-active`)) {
+		linkNav.classList.remove(`is-active`)
+		dropdown.classList.remove(`is-active`)
 	}
 }
 
 const linkClickHandler = (event) => {
 	event.preventDefault()
-	linkNav.classList.toggle(`js-active`)
-	dropdown.classList.toggle(`js-active`)
+	linkNav.classList.toggle(`is-active`)
+	dropdown.classList.toggle(`is-active`)
 
-	if (linkNav.closest(`.js-active`)) {
+	if (linkNav.closest(`.is-active`)) {
 		document.addEventListener(`click`, documentClickHendler)
 	} else {
 		document.removeEventListener(`click`, documentClickHendler)
@@ -22,8 +22,8 @@ const linkClickHandler = (event) => {
 }
 
 const linksClickHandler = () => {
-	linkNav.classList.toggle(`js-active`)
-	dropdown.classList.toggle(`js-active`)
+	linkNav.classList.toggle(`is-active`)
+	dropdown.classList.toggle(`is-active`)
 }
 
 const closeDropdown = () => {
