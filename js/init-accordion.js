@@ -1,0 +1,1 @@
+const accordion=document.querySelector(".accordion"),openAccordion=()=>{new window.Accordion(accordion,{duration:500,showMultiple:!0})},initAccordion=()=>{accordion&&new window.Accordion(accordion,{duration:500,showMultiple:!0})};export{initAccordion};
